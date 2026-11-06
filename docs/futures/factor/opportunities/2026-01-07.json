@@ -1,0 +1,1 @@
+[{"id":83,"t":29462735,"direction":-1,"patterns":[],"triggers":["breakout1"],"probability":null,"strength":null,"threshold":null,"price":1015.24,"entered":false,"featureSet":null},{"id":84,"t":29462737,"direction":1,"patterns":[],"triggers":["reversion1"],"probability":null,"strength":null,"threshold":null,"price":1015.9200000000001,"entered":false,"featureSet":null}]

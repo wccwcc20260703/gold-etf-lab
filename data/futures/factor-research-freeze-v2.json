@@ -1,0 +1,374 @@
+{
+  "specification": {
+    "protocolHash": "7fc3a09b8b88a3f9af17ac33a5f143167e5745e382f83076782562c83e5118c2",
+    "frameHash": "b0e05377982a7974a8a308c6a09599193928b2546dab3eaef862e31340096b53",
+    "minuteInputHash": "7d5e395d0389ba4e82a31d9e2187e633caab9a699a00fc4194e4dabe21f00a75",
+    "engineHash": "3259d138b14e41175db0d9b5bbcd49a245e4869bff6a0ece3a74eac0b1e92f47",
+    "profiles": [
+      {
+        "id": 0,
+        "stopPct": 0.001,
+        "exitStyle": "fixed0.8R",
+        "maxHold": 60,
+        "carry": "intraday"
+      },
+      {
+        "id": 1,
+        "stopPct": 0.001,
+        "exitStyle": "fixed0.8R",
+        "maxHold": 60,
+        "carry": "conditional_trend"
+      },
+      {
+        "id": 2,
+        "stopPct": 0.001,
+        "exitStyle": "fixed0.8R",
+        "maxHold": 180,
+        "carry": "intraday"
+      },
+      {
+        "id": 3,
+        "stopPct": 0.001,
+        "exitStyle": "fixed0.8R",
+        "maxHold": 180,
+        "carry": "conditional_trend"
+      },
+      {
+        "id": 4,
+        "stopPct": 0.001,
+        "exitStyle": "fixed1.5R",
+        "maxHold": 60,
+        "carry": "intraday"
+      },
+      {
+        "id": 5,
+        "stopPct": 0.001,
+        "exitStyle": "fixed1.5R",
+        "maxHold": 60,
+        "carry": "conditional_trend"
+      },
+      {
+        "id": 6,
+        "stopPct": 0.001,
+        "exitStyle": "fixed1.5R",
+        "maxHold": 180,
+        "carry": "intraday"
+      },
+      {
+        "id": 7,
+        "stopPct": 0.001,
+        "exitStyle": "fixed1.5R",
+        "maxHold": 180,
+        "carry": "conditional_trend"
+      },
+      {
+        "id": 8,
+        "stopPct": 0.001,
+        "exitStyle": "fixed2R",
+        "maxHold": 60,
+        "carry": "intraday"
+      },
+      {
+        "id": 9,
+        "stopPct": 0.001,
+        "exitStyle": "fixed2R",
+        "maxHold": 60,
+        "carry": "conditional_trend"
+      },
+      {
+        "id": 10,
+        "stopPct": 0.001,
+        "exitStyle": "fixed2R",
+        "maxHold": 180,
+        "carry": "intraday"
+      },
+      {
+        "id": 11,
+        "stopPct": 0.001,
+        "exitStyle": "fixed2R",
+        "maxHold": 180,
+        "carry": "conditional_trend"
+      },
+      {
+        "id": 12,
+        "stopPct": 0.001,
+        "exitStyle": "breakeven_then_ATR_trail",
+        "maxHold": 60,
+        "carry": "intraday"
+      },
+      {
+        "id": 13,
+        "stopPct": 0.001,
+        "exitStyle": "breakeven_then_ATR_trail",
+        "maxHold": 60,
+        "carry": "conditional_trend"
+      },
+      {
+        "id": 14,
+        "stopPct": 0.001,
+        "exitStyle": "breakeven_then_ATR_trail",
+        "maxHold": 180,
+        "carry": "intraday"
+      },
+      {
+        "id": 15,
+        "stopPct": 0.001,
+        "exitStyle": "breakeven_then_ATR_trail",
+        "maxHold": 180,
+        "carry": "conditional_trend"
+      },
+      {
+        "id": 16,
+        "stopPct": 0.0015,
+        "exitStyle": "fixed0.8R",
+        "maxHold": 60,
+        "carry": "intraday"
+      },
+      {
+        "id": 17,
+        "stopPct": 0.0015,
+        "exitStyle": "fixed0.8R",
+        "maxHold": 60,
+        "carry": "conditional_trend"
+      },
+      {
+        "id": 18,
+        "stopPct": 0.0015,
+        "exitStyle": "fixed0.8R",
+        "maxHold": 180,
+        "carry": "intraday"
+      },
+      {
+        "id": 19,
+        "stopPct": 0.0015,
+        "exitStyle": "fixed0.8R",
+        "maxHold": 180,
+        "carry": "conditional_trend"
+      },
+      {
+        "id": 20,
+        "stopPct": 0.0015,
+        "exitStyle": "fixed1.5R",
+        "maxHold": 60,
+        "carry": "intraday"
+      },
+      {
+        "id": 21,
+        "stopPct": 0.0015,
+        "exitStyle": "fixed1.5R",
+        "maxHold": 60,
+        "carry": "conditional_trend"
+      },
+      {
+        "id": 22,
+        "stopPct": 0.0015,
+        "exitStyle": "fixed1.5R",
+        "maxHold": 180,
+        "carry": "intraday"
+      },
+      {
+        "id": 23,
+        "stopPct": 0.0015,
+        "exitStyle": "fixed1.5R",
+        "maxHold": 180,
+        "carry": "conditional_trend"
+      },
+      {
+        "id": 24,
+        "stopPct": 0.0015,
+        "exitStyle": "fixed2R",
+        "maxHold": 60,
+        "carry": "intraday"
+      },
+      {
+        "id": 25,
+        "stopPct": 0.0015,
+        "exitStyle": "fixed2R",
+        "maxHold": 60,
+        "carry": "conditional_trend"
+      },
+      {
+        "id": 26,
+        "stopPct": 0.0015,
+        "exitStyle": "fixed2R",
+        "maxHold": 180,
+        "carry": "intraday"
+      },
+      {
+        "id": 27,
+        "stopPct": 0.0015,
+        "exitStyle": "fixed2R",
+        "maxHold": 180,
+        "carry": "conditional_trend"
+      },
+      {
+        "id": 28,
+        "stopPct": 0.0015,
+        "exitStyle": "breakeven_then_ATR_trail",
+        "maxHold": 60,
+        "carry": "intraday"
+      },
+      {
+        "id": 29,
+        "stopPct": 0.0015,
+        "exitStyle": "breakeven_then_ATR_trail",
+        "maxHold": 60,
+        "carry": "conditional_trend"
+      },
+      {
+        "id": 30,
+        "stopPct": 0.0015,
+        "exitStyle": "breakeven_then_ATR_trail",
+        "maxHold": 180,
+        "carry": "intraday"
+      },
+      {
+        "id": 31,
+        "stopPct": 0.0015,
+        "exitStyle": "breakeven_then_ATR_trail",
+        "maxHold": 180,
+        "carry": "conditional_trend"
+      },
+      {
+        "id": 32,
+        "stopPct": 0.002,
+        "exitStyle": "fixed0.8R",
+        "maxHold": 60,
+        "carry": "intraday"
+      },
+      {
+        "id": 33,
+        "stopPct": 0.002,
+        "exitStyle": "fixed0.8R",
+        "maxHold": 60,
+        "carry": "conditional_trend"
+      },
+      {
+        "id": 34,
+        "stopPct": 0.002,
+        "exitStyle": "fixed0.8R",
+        "maxHold": 180,
+        "carry": "intraday"
+      },
+      {
+        "id": 35,
+        "stopPct": 0.002,
+        "exitStyle": "fixed0.8R",
+        "maxHold": 180,
+        "carry": "conditional_trend"
+      },
+      {
+        "id": 36,
+        "stopPct": 0.002,
+        "exitStyle": "fixed1.5R",
+        "maxHold": 60,
+        "carry": "intraday"
+      },
+      {
+        "id": 37,
+        "stopPct": 0.002,
+        "exitStyle": "fixed1.5R",
+        "maxHold": 60,
+        "carry": "conditional_trend"
+      },
+      {
+        "id": 38,
+        "stopPct": 0.002,
+        "exitStyle": "fixed1.5R",
+        "maxHold": 180,
+        "carry": "intraday"
+      },
+      {
+        "id": 39,
+        "stopPct": 0.002,
+        "exitStyle": "fixed1.5R",
+        "maxHold": 180,
+        "carry": "conditional_trend"
+      },
+      {
+        "id": 40,
+        "stopPct": 0.002,
+        "exitStyle": "fixed2R",
+        "maxHold": 60,
+        "carry": "intraday"
+      },
+      {
+        "id": 41,
+        "stopPct": 0.002,
+        "exitStyle": "fixed2R",
+        "maxHold": 60,
+        "carry": "conditional_trend"
+      },
+      {
+        "id": 42,
+        "stopPct": 0.002,
+        "exitStyle": "fixed2R",
+        "maxHold": 180,
+        "carry": "intraday"
+      },
+      {
+        "id": 43,
+        "stopPct": 0.002,
+        "exitStyle": "fixed2R",
+        "maxHold": 180,
+        "carry": "conditional_trend"
+      },
+      {
+        "id": 44,
+        "stopPct": 0.002,
+        "exitStyle": "breakeven_then_ATR_trail",
+        "maxHold": 60,
+        "carry": "intraday"
+      },
+      {
+        "id": 45,
+        "stopPct": 0.002,
+        "exitStyle": "breakeven_then_ATR_trail",
+        "maxHold": 60,
+        "carry": "conditional_trend"
+      },
+      {
+        "id": 46,
+        "stopPct": 0.002,
+        "exitStyle": "breakeven_then_ATR_trail",
+        "maxHold": 180,
+        "carry": "intraday"
+      },
+      {
+        "id": 47,
+        "stopPct": 0.002,
+        "exitStyle": "breakeven_then_ATR_trail",
+        "maxHold": 180,
+        "carry": "conditional_trend"
+      }
+    ],
+    "features": [
+      "trend15",
+      "trend60",
+      "slope15",
+      "momentum5",
+      "rsi5",
+      "bollingerDeviation",
+      "breakoutDistance",
+      "pullbackTrigger",
+      "breakoutTrigger",
+      "reversionTrigger",
+      "triangle",
+      "headShoulders",
+      "volumeExpansion",
+      "openInterestChange",
+      "atrPercent",
+      "night",
+      "realYieldChange5",
+      "nominalYieldChange5",
+      "curve10minus2",
+      "policyChange20d",
+      "usdCnyReturn5",
+      "ratesMissing",
+      "fxMissing",
+      "isShort"
+    ]
+  },
+  "createdAt": "2026-11-06T11:27:38.451226+00:00",
+  "note": "Daily protocol frozen before firstv2 results;v1 history already inspected."
+}

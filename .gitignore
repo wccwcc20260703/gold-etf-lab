@@ -5,3 +5,4 @@ __pycache__/
 data/futures/full-history/
 data/futures/access-probe/
 .DS_Store
+data/futures/cache/

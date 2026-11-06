@@ -23,6 +23,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install pinned numerical audit dependency
+        run: python -m pip install numpy==2.0.2
       - name: Fetch four ETFs sequentially
         if: github.event_name != 'push'
         run: python3 scripts/fetch_data.py
@@ -35,10 +40,20 @@ jobs:
         run: |
           npm test
           python3 scripts/test_futures_acquisition.py
+          python3 scripts/prepare_factor_cache.py
+          python3 -B scripts/test_factor_research.py
+          python3 -B scripts/test_factor_training_causality.py
+          python3 -B scripts/test_outside_ema20.py
       - name: Audit published cash ledgers with independent Decimal arithmetic
         run: |
           python3 scripts/account_audit.py
           python3 scripts/audit_futures.py
+          python3 -B scripts/audit_factor_results.py
+          python3 -B scripts/audit_factor_results.py docs/futures/factor/ablation/core
+          python3 -B scripts/audit_factor_results.py docs/futures/factor/ablation/technical
+          python3 -B scripts/audit_factor_results.py docs/futures/factor/ablation/combined
+          python3 -B scripts/audit_outside_ema20.py
+          python3 -B scripts/audit_outside_ema20.py docs/futures/outside/no_portfolio_cap
       - name: Preserve new verified research data
         if: github.event_name != 'push'
         run: |

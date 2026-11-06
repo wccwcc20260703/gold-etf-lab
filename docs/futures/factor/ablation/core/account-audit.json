@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "selectedDailyModelsAudited": 97,
+  "receipts": [
+    {
+      "scenario": "oos",
+      "trades": 119,
+      "ledgerEvents": 238,
+      "finalEquity": 316060.0,
+      "passed": true
+    },
+    {
+      "scenario": "stress",
+      "trades": 81,
+      "ledgerEvents": 162,
+      "finalEquity": 302800.0,
+      "passed": true
+    }
+  ],
+  "oosBrierScore": 0.23938445926966692,
+  "constant50PercentBrierReference": 0.25,
+  "checks": [
+    "Decimal cash/settlement/NAV",
+    "one signed lot",
+    "planned risk including fees/slippage",
+    "zero-volume fill prohibition",
+    "causal macro/daily/minute features",
+    "daily train/validation purge ordering",
+    "train-only feature mean",
+    "probability entry threshold",
+    "stop percentage and cost identity",
+    "no carry through protected events or long closure gaps"
+  ],
+  "notes": [
+    "Event schedule historical vintage and macro revisions remain imperfect; audit does not establish predictive skill.",
+    "OOS is retrospective walk-forward over an already inspected instrument; no prospective trades yet."
+  ]
+}

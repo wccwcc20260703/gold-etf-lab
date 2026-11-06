@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "decisionDay": "2026-08-28",
+  "trainedThrough": "2026-08-25",
+  "candidates": 288,
+  "checks": [
+    "Embargo/test/future feature mutation does not alter selected profile/threshold/weights",
+    "Embargo/test/future exit-PnL label mutation does not alter daily selection",
+    "Current-day predictions excluded from comparison because current market observations legitimately change predictions"
+  ]
+}

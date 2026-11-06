@@ -1,0 +1,79 @@
+{
+  "passed": true,
+  "scenarios": 8,
+  "receipts": [
+    {
+      "id": "trading_minutes_intraday",
+      "cost": "base",
+      "trades": 3,
+      "finalEquity": 303420.0,
+      "trailAdjustments": 0,
+      "passed": true
+    },
+    {
+      "id": "trading_minutes_intraday",
+      "cost": "stress",
+      "trades": 2,
+      "finalEquity": 300780.0,
+      "trailAdjustments": 0,
+      "passed": true
+    },
+    {
+      "id": "trading_minutes_conditional_trend",
+      "cost": "base",
+      "trades": 3,
+      "finalEquity": 303420.0,
+      "trailAdjustments": 0,
+      "passed": true
+    },
+    {
+      "id": "trading_minutes_conditional_trend",
+      "cost": "stress",
+      "trades": 2,
+      "finalEquity": 300780.0,
+      "trailAdjustments": 0,
+      "passed": true
+    },
+    {
+      "id": "session_clock_intraday",
+      "cost": "base",
+      "trades": 7,
+      "finalEquity": 289260.0,
+      "trailAdjustments": 0,
+      "passed": true
+    },
+    {
+      "id": "session_clock_intraday",
+      "cost": "stress",
+      "trades": 3,
+      "finalEquity": 299460.0,
+      "trailAdjustments": 0,
+      "passed": true
+    },
+    {
+      "id": "session_clock_conditional_trend",
+      "cost": "base",
+      "trades": 6,
+      "finalEquity": 289020.0,
+      "trailAdjustments": 0,
+      "passed": true
+    },
+    {
+      "id": "session_clock_conditional_trend",
+      "cost": "stress",
+      "trades": 3,
+      "finalEquity": 295520.0,
+      "trailAdjustments": 0,
+      "passed": true
+    }
+  ],
+  "checks": [
+    "Full-range outside andEMA20 direction",
+    "Next bar first positive-volume open",
+    "Outside extreme initialstop",
+    "Closed3bar extremes and one-way trail",
+    "No invented confidence probabilities",
+    "One-lot planned risk inclfees/slip",
+    "Decimal variationmargin/cash/NAV"
+  ]
+}

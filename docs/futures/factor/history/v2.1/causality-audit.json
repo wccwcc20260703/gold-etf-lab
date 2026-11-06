@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "cutMinuteIndex": 45007,
+  "comparedOpportunities": 1112,
+  "features": 53,
+  "checks": [
+    "future append invariance",
+    "future minute price mutation invariance",
+    "unfinished and future daily OHLC mutation invariance",
+    "one-minute, multi-timeframe, developing-day, chart-pattern and delayed macro factors unchanged"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "sourceMinutes": 128115,
+  "tradingDays": 235,
+  "opportunities": 17380,
+  "features": 53,
+  "patternEvaluations": 128115,
+  "patternDetections": 1243,
+  "dailyCandidatesRecorded": 106272,
+  "frameSha256": "8f8f6280309a5bf6a5bd4ca04fe918bb36de250b8cb2317d61bcf53ff6bf56ef",
+  "macroSourceSha256": "f2c64e4d0e5376a75c2957325da36d6ae1c1b139fca88b7a00b82423b06f2610",
+  "versions": [
+    "v2.0",
+    "v2.1",
+    "v2.2",
+    "v2.3-core",
+    "v2.3-technical",
+    "v2.3-prior-validation-combined"
+  ],
+  "currentDisplay": "v2.3 combined; each day chooses group using only prior validation, not OOS winner",
+  "qualification": "Research only; no prospective evidence yet",
+  "coverage": {
+    "days": 235,
+    "start": "2025-11-18",
+    "end": "2026-11-06",
+    "minutes": 128115,
+    "opportunities": 17380,
+    "oosStart": "2026-05-11",
+    "oosDays": 123,
+    "selectedDays": 121
+  }
+}

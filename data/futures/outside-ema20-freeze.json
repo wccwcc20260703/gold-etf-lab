@@ -1,0 +1,63 @@
+{
+  "createdAt": "2026-11-06T12:24:51.833218+00:00",
+  "specification": {
+    "scriptSha256": "46b5852c41f41c6183bf92b397d4139d104377cb8ce225d1afae0978d4f2b5ef",
+    "accountEngineSha256": "d0fd18d4b4e648e2bba9f4c63c52d223127013609fb5c0a45bb077e975202993",
+    "minuteInputSha256": "7d5e395d0389ba4e82a31d9e2187e633caab9a699a00fc4194e4dabe21f00a75",
+    "eventSha256": "58a4a93814fbde228f4e038cb99bec35d009ef96a3123eaa9f62fb399085fe72",
+    "protocol": {
+      "version": "EMA20-outside-v1",
+      "declaredAt": "2026-11-06T12:24:50.976875+00:00",
+      "source": "User-described Xiaohongshu method; source platform candle alignment unknown",
+      "timeframesMinutes": [
+        120
+      ],
+      "aggregation": [
+        "trading_minutes",
+        "session_clock"
+      ],
+      "outside": "Current HIGH>previousHIGH and LOW<previousLOW; both positive-volume completed bars. Primary full-range outside, not body-only engulfing.",
+      "direction": "Bull close>open and close>EMA20 ->long; bear close<open and close<EMA20 ->short. Do not require previous candle opposite in primary.",
+      "ema": "20 close SMA seed then alpha2/21 recursion; no signal before20 completed bars",
+      "entry": "Next bar first executed minute open plus adverse slip; if zero-volume first minute, wait for its first trade within next bar; risk checked then; no invented fill on zero volume",
+      "initialStop": "Outside bar extreme:low forlong/high forshort. Never tighten initial stop to force1lot inside3000budget.",
+      "exits": [
+        "three_completed_bar_trail"
+      ],
+      "trailing": "Initial stop outside extreme; after each completed chosen-timeframe bar update long stop=max(old,min(last3 lows)), short=min(old,max(last3highs)). Only favorable moves; no future/in-progress bar.",
+      "holdingPolicies": [
+        "intraday",
+        "conditional_trend"
+      ],
+      "intraday": "No new after14:45/02:15; exit14:55/02:25; same as preexisting discipline.",
+      "conditionalTrend": "At14:55/02:25, hold only last completed chosen-timeframe barclose remains onEMA20 side, margin sufficient, no scheduledmajor event in next24h and no>12h closure gap",
+      "capital": 300000,
+      "lots": 1,
+      "maxPlannedRiskCny": 3000,
+      "riskFraction": 0.01,
+      "maxEntriesPerTradingDay": 2,
+      "cooldownMinutes": 5,
+      "dailyLossFraction": 0.02,
+      "portfolioDrawdownBudgetCny": 15000,
+      "costs": {
+        "feePerSideCny": 20,
+        "slippageTicksPerSide": 2,
+        "marginRate": 0.2,
+        "entryBuffer": 0.2
+      },
+      "stress": {
+        "feePerSideCny": 40,
+        "slippageTicksPerSide": 4,
+        "marginRate": 0.25
+      },
+      "signalSensitivity": "Also report previous-bar-opposite-color definition, as a separate labeled variant. No selection/promotion based on full-period winner.",
+      "eventPolicy": "78-source calendar same as factor study, FOMC/minutes2h,CPI/NFP/PCE/GDP1h before/after, original+revised whereverified; historicalschedule-vintage limitation remains",
+      "aggregationDetail": {
+        "trading_minutes": "Within each trading day, accumulate actual1m exchange-time slots, spanning breaks. Final shorter bucket completed at15:00. No price adjustment or contract roll.",
+        "session_clock": "Night anchored21:00 to02:30, day09:00 to15:00 wall clock. Empty breaks ignored; session-end shorter buckets are explicitly counted."
+      },
+      "evaluation": "Full available contract since listing, each day replayed; historical results already inspected; not true prospective validation.",
+      "confirmedUserChoice": "User explicitly chose previous3completedbar extremes, notEMA20 exit"
+    }
+  }
+}

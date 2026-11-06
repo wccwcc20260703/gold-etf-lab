@@ -1,0 +1,85 @@
+{
+  "version": "factor-daily-v2.1",
+  "declaredBeforeV2Results": "2026-11-06T11:43:00.293761+00:00",
+  "purpose": "Learn weights daily and seek high win rate subject to positive net expectancy, profit factor, sample size and drawdown constraints. No guarantee that any model passes.",
+  "capital": 300000,
+  "lots": 1,
+  "maxPlannedRiskCny": 3000,
+  "maxRiskFraction": 0.01,
+  "maxEntriesPerTradingDay": 2,
+  "dailyLossFraction": 0.02,
+  "candidateStopsPct": [
+    0.001,
+    0.0015,
+    0.002
+  ],
+  "minimumStopAsFractionOf5mATR": 0.5,
+  "exits": [
+    "fixed0.8R",
+    "fixed1.5R",
+    "fixed2R",
+    "breakeven_then_ATR_trail"
+  ],
+  "trailRule": "Only after completed5m profit>=1R move stop toward fee-inclusive breakeven; after>=1.5R use2ATR5m trail; exit on completed15m EMA8/21 reversal. No fixed target for trail profile.",
+  "maxHoldingTradingMinutes": [
+    60,
+    180
+  ],
+  "carryModes": [
+    "intraday",
+    "conditional_trend"
+  ],
+  "carryRule": "At14:55/02:25, conditional mode holds only if causal15/60m technical carry score>=80; explicit setup-independent score30+30+20+10+10; no learned probability fed back into labels.",
+  "classifier": "L2 regularized logistic regression; train-only standardization; rare/constant features disabled; coefficients learned, not hand-scored; probabilities require out-of-sample calibration",
+  "l2": [
+    0.1,
+    1.0
+  ],
+  "entryProbabilityThresholds": [
+    0.6,
+    0.65,
+    0.7
+  ],
+  "trainTradingDays": 90,
+  "validationTradingDays": 20,
+  "embargoTradingDays": 2,
+  "labelPurgeTradingDays": 2,
+  "retrain": "Every trading day using only prior windows; next-day OOS continuous account, old trade keeps original exit profile when daily model changes",
+  "trainMinTrades": 30,
+  "validationMinTrades": 10,
+  "minProfitFactor": 1.2,
+  "maxSelectionDrawdownCny": 15000,
+  "requirePositiveExpectancy": true,
+  "requirePositiveSurchargeStress": true,
+  "selectionOrder": [
+    "pass all economic/risk/sample gates",
+    "highest95percent Wilson lower win-rate bound",
+    "highest netPnl / maxDrawdown"
+  ],
+  "costs": {
+    "open": 20,
+    "closeToday": 20,
+    "closeOvernight": 20,
+    "slippageTicksPerSide": 2,
+    "margin": 0.2,
+    "marginBuffer": 0.2
+  },
+  "fullStress": {
+    "open": 40,
+    "closeToday": 40,
+    "closeOvernight": 40,
+    "slippageTicksPerSide": 4,
+    "margin": 0.25
+  },
+  "selectionStress": "Extra120CNY per round trip on same fills, separately from final full price/margin stress",
+  "historicalStatus": "AU2612 history has already been inspected forv1; v2 daily walk-forward is retrospective protocol validation, not untouched prospective evidence. New dates after2026-11-06 are prospective.",
+  "informationPolicy": "Current-vintage public FRED with DST/holiday-aware delayed availability proxies. No fabricated historical geopolitics/news sentiment. Missing and sparse factors remain disclosed.",
+  "priorVersionObserved": "v2.0 had50OOTrades,38%win,-28680CNY; retained. New version responds to user event/intraday/multiTF/exit requirements, not an untouched holdout.",
+  "minAverageWinLossRatio": 1.0,
+  "conditionalCarryMinValidationTrades": 20,
+  "intradayPreferenceWilsonTolerance": 0.02,
+  "accountDrawdownStopCny": 15000,
+  "drawdownStopPolicy": "Research safety assumption: planned risk must fit remaining15000CNY drawdown budget; on breach try exit and halt new entries for this version; gaps may exceed. No automatic restart.",
+  "eventRisk": "FOMC/minutes2h before/after;CPI/NFP/PCE/GDP1h;next24h event or>12h nontrading gap forbids carry; original+revised dates where verified.",
+  "technicalFrequency": "Causal daily completed/developing state and1/5/15/60m; everyminute patterns; stop/target everyminute; train-only correlation pruning>=.95"
+}

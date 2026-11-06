@@ -1,0 +1,2 @@
+# Preserve downloaded CSV bytes and recognize RFC-style CRLF as a valid line ending.
+*.csv -text whitespace=cr-at-eol

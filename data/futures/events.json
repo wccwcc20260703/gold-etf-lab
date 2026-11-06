@@ -1,0 +1,788 @@
+{
+  "snapshot": "2026-11-06",
+  "timezone": "America/New_York converted to Asia/Shanghai with DST",
+  "policy": "FOMC/minutes block2h before/after; CPI/NFP/PCE/GDP1h before/after; no carry when next24h contains event; original plus revised dates where verified",
+  "limitation": "Historical calendars are current archival snapshots, not daily vintage schedules; original+revised dates conservatively retained where verified. Unscheduled shocks and all official speeches are not covered.",
+  "events": [
+    {
+      "date": "2025-11-19",
+      "timeET": "14:00",
+      "type": "FOMC_minutes",
+      "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "minute": 29392980,
+      "chinaTime": "2025-11-20T03:00:00+08:00",
+      "beforeMinutes": 120,
+      "afterMinutes": 120
+    },
+    {
+      "date": "2025-11-20",
+      "timeET": "08:30",
+      "type": "NFP",
+      "source": "https://www.bls.gov/schedule/2025/",
+      "minute": 29394090,
+      "chinaTime": "2025-11-20T21:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2025-11-26",
+      "timeET": "08:30",
+      "type": "GDP_original_schedule",
+      "source": "https://apps.bea.gov/scb/issues/2026/01-january/0126-charting-economy.htm",
+      "minute": 29402730,
+      "chinaTime": "2025-11-26T21:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2025-12-05",
+      "timeET": "10:00",
+      "type": "PCE",
+      "source": "https://www.bea.gov/news/schedule/full-2025",
+      "minute": 29415780,
+      "chinaTime": "2025-12-05T23:00:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2025-12-10",
+      "timeET": "14:00",
+      "type": "FOMC",
+      "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "minute": 29423220,
+      "chinaTime": "2025-12-11T03:00:00+08:00",
+      "beforeMinutes": 120,
+      "afterMinutes": 120
+    },
+    {
+      "date": "2025-12-16",
+      "timeET": "08:30",
+      "type": "NFP",
+      "source": "https://www.bls.gov/schedule/2025/",
+      "minute": 29431530,
+      "chinaTime": "2025-12-16T21:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2025-12-18",
+      "timeET": "08:30",
+      "type": "CPI",
+      "source": "https://www.bls.gov/schedule/2025/",
+      "minute": 29434410,
+      "chinaTime": "2025-12-18T21:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2025-12-19",
+      "timeET": "08:30",
+      "type": "GDP_original_schedule",
+      "source": "https://apps.bea.gov/scb/issues/2026/01-january/0126-charting-economy.htm",
+      "minute": 29435850,
+      "chinaTime": "2025-12-19T21:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2025-12-23",
+      "timeET": "08:30",
+      "type": "GDP",
+      "source": "https://www.bea.gov/news/schedule/full-2025",
+      "minute": 29441610,
+      "chinaTime": "2025-12-23T21:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2025-12-30",
+      "timeET": "14:00",
+      "type": "FOMC_minutes",
+      "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "minute": 29452020,
+      "chinaTime": "2025-12-31T03:00:00+08:00",
+      "beforeMinutes": 120,
+      "afterMinutes": 120
+    },
+    {
+      "date": "2026-01-09",
+      "timeET": "08:30",
+      "type": "NFP",
+      "source": "https://www.bls.gov/schedule/2026/",
+      "minute": 29466090,
+      "chinaTime": "2026-01-09T21:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-01-13",
+      "timeET": "08:30",
+      "type": "CPI",
+      "source": "https://www.bls.gov/schedule/2026/",
+      "minute": 29471850,
+      "chinaTime": "2026-01-13T21:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-01-22",
+      "timeET": "08:30",
+      "type": "GDP",
+      "source": "https://www.bea.gov/news/schedule/full",
+      "minute": 29484810,
+      "chinaTime": "2026-01-22T21:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-01-22",
+      "timeET": "10:00",
+      "type": "PCE",
+      "source": "https://www.bea.gov/news/schedule/full",
+      "minute": 29484900,
+      "chinaTime": "2026-01-22T23:00:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-01-28",
+      "timeET": "14:00",
+      "type": "FOMC",
+      "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "minute": 29493780,
+      "chinaTime": "2026-01-29T03:00:00+08:00",
+      "beforeMinutes": 120,
+      "afterMinutes": 120
+    },
+    {
+      "date": "2026-01-29",
+      "timeET": "08:30",
+      "type": "PCE_original_schedule",
+      "source": "https://www.bea.gov/news/2026/personal-income-and-outlays-december-2025",
+      "minute": 29494890,
+      "chinaTime": "2026-01-29T21:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-02-06",
+      "timeET": "08:30",
+      "type": "NFP_original_schedule",
+      "source": "https://www.bls.gov/bls/2025-lapse-revised-release-dates.htm",
+      "minute": 29506410,
+      "chinaTime": "2026-02-06T21:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-02-11",
+      "timeET": "08:30",
+      "type": "NFP",
+      "source": "https://www.bls.gov/schedule/2026/",
+      "minute": 29513610,
+      "chinaTime": "2026-02-11T21:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-02-11",
+      "timeET": "08:30",
+      "type": "CPI_original_schedule",
+      "source": "https://www.bls.gov/bls/2025-lapse-revised-release-dates.htm",
+      "minute": 29513610,
+      "chinaTime": "2026-02-11T21:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-02-13",
+      "timeET": "08:30",
+      "type": "CPI",
+      "source": "https://www.bls.gov/schedule/2026/",
+      "minute": 29516490,
+      "chinaTime": "2026-02-13T21:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-02-18",
+      "timeET": "14:00",
+      "type": "FOMC_minutes",
+      "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "minute": 29524020,
+      "chinaTime": "2026-02-19T03:00:00+08:00",
+      "beforeMinutes": 120,
+      "afterMinutes": 120
+    },
+    {
+      "date": "2026-02-20",
+      "timeET": "08:30",
+      "type": "GDP",
+      "source": "https://www.bea.gov/news/schedule/full",
+      "minute": 29526570,
+      "chinaTime": "2026-02-20T21:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-02-20",
+      "timeET": "08:30",
+      "type": "PCE",
+      "source": "https://www.bea.gov/news/schedule/full",
+      "minute": 29526570,
+      "chinaTime": "2026-02-20T21:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-03-06",
+      "timeET": "08:30",
+      "type": "NFP",
+      "source": "https://www.bls.gov/schedule/2026/",
+      "minute": 29546730,
+      "chinaTime": "2026-03-06T21:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-03-11",
+      "timeET": "08:30",
+      "type": "CPI",
+      "source": "https://www.bls.gov/schedule/2026/",
+      "minute": 29553870,
+      "chinaTime": "2026-03-11T20:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-03-13",
+      "timeET": "08:30",
+      "type": "GDP",
+      "source": "https://www.bea.gov/news/schedule/full",
+      "minute": 29556750,
+      "chinaTime": "2026-03-13T20:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-03-13",
+      "timeET": "08:30",
+      "type": "PCE",
+      "source": "https://www.bea.gov/news/schedule/full",
+      "minute": 29556750,
+      "chinaTime": "2026-03-13T20:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-03-18",
+      "timeET": "14:00",
+      "type": "FOMC",
+      "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "minute": 29564280,
+      "chinaTime": "2026-03-19T02:00:00+08:00",
+      "beforeMinutes": 120,
+      "afterMinutes": 120
+    },
+    {
+      "date": "2026-04-03",
+      "timeET": "08:30",
+      "type": "NFP",
+      "source": "https://www.bls.gov/schedule/2026/",
+      "minute": 29586990,
+      "chinaTime": "2026-04-03T20:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-04-08",
+      "timeET": "14:00",
+      "type": "FOMC_minutes",
+      "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "minute": 29594520,
+      "chinaTime": "2026-04-09T02:00:00+08:00",
+      "beforeMinutes": 120,
+      "afterMinutes": 120
+    },
+    {
+      "date": "2026-04-09",
+      "timeET": "08:30",
+      "type": "PCE",
+      "source": "https://www.bea.gov/news/schedule/full",
+      "minute": 29595630,
+      "chinaTime": "2026-04-09T20:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-04-09",
+      "timeET": "08:30",
+      "type": "GDP",
+      "source": "https://www.bea.gov/news/schedule/full",
+      "minute": 29595630,
+      "chinaTime": "2026-04-09T20:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-04-10",
+      "timeET": "08:30",
+      "type": "CPI",
+      "source": "https://www.bls.gov/schedule/2026/",
+      "minute": 29597070,
+      "chinaTime": "2026-04-10T20:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-04-29",
+      "timeET": "14:00",
+      "type": "FOMC",
+      "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "minute": 29624760,
+      "chinaTime": "2026-04-30T02:00:00+08:00",
+      "beforeMinutes": 120,
+      "afterMinutes": 120
+    },
+    {
+      "date": "2026-04-30",
+      "timeET": "08:30",
+      "type": "GDP",
+      "source": "https://www.bea.gov/news/schedule/full",
+      "minute": 29625870,
+      "chinaTime": "2026-04-30T20:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-04-30",
+      "timeET": "08:30",
+      "type": "PCE",
+      "source": "https://www.bea.gov/news/schedule/full",
+      "minute": 29625870,
+      "chinaTime": "2026-04-30T20:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-05-08",
+      "timeET": "08:30",
+      "type": "NFP",
+      "source": "https://www.bls.gov/schedule/2026/",
+      "minute": 29637390,
+      "chinaTime": "2026-05-08T20:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-05-12",
+      "timeET": "08:30",
+      "type": "CPI",
+      "source": "https://www.bls.gov/schedule/2026/",
+      "minute": 29643150,
+      "chinaTime": "2026-05-12T20:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-05-20",
+      "timeET": "14:00",
+      "type": "FOMC_minutes",
+      "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "minute": 29655000,
+      "chinaTime": "2026-05-21T02:00:00+08:00",
+      "beforeMinutes": 120,
+      "afterMinutes": 120
+    },
+    {
+      "date": "2026-05-28",
+      "timeET": "08:30",
+      "type": "PCE",
+      "source": "https://www.bea.gov/news/schedule/full",
+      "minute": 29666190,
+      "chinaTime": "2026-05-28T20:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-05-28",
+      "timeET": "08:30",
+      "type": "GDP",
+      "source": "https://www.bea.gov/news/schedule/full",
+      "minute": 29666190,
+      "chinaTime": "2026-05-28T20:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-06-05",
+      "timeET": "08:30",
+      "type": "NFP",
+      "source": "https://www.bls.gov/schedule/2026/",
+      "minute": 29677710,
+      "chinaTime": "2026-06-05T20:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-06-10",
+      "timeET": "08:30",
+      "type": "CPI",
+      "source": "https://www.bls.gov/schedule/2026/",
+      "minute": 29684910,
+      "chinaTime": "2026-06-10T20:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-06-17",
+      "timeET": "14:00",
+      "type": "FOMC",
+      "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "minute": 29695320,
+      "chinaTime": "2026-06-18T02:00:00+08:00",
+      "beforeMinutes": 120,
+      "afterMinutes": 120
+    },
+    {
+      "date": "2026-06-25",
+      "timeET": "08:30",
+      "type": "GDP",
+      "source": "https://www.bea.gov/news/schedule/full",
+      "minute": 29706510,
+      "chinaTime": "2026-06-25T20:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-06-25",
+      "timeET": "08:30",
+      "type": "PCE",
+      "source": "https://www.bea.gov/news/schedule/full",
+      "minute": 29706510,
+      "chinaTime": "2026-06-25T20:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-07-02",
+      "timeET": "08:30",
+      "type": "NFP",
+      "source": "https://www.bls.gov/schedule/2026/",
+      "minute": 29716590,
+      "chinaTime": "2026-07-02T20:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-07-08",
+      "timeET": "14:00",
+      "type": "FOMC_minutes",
+      "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "minute": 29725560,
+      "chinaTime": "2026-07-09T02:00:00+08:00",
+      "beforeMinutes": 120,
+      "afterMinutes": 120
+    },
+    {
+      "date": "2026-07-14",
+      "timeET": "08:30",
+      "type": "CPI",
+      "source": "https://www.bls.gov/schedule/2026/",
+      "minute": 29733870,
+      "chinaTime": "2026-07-14T20:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-07-29",
+      "timeET": "14:00",
+      "type": "FOMC",
+      "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "minute": 29755800,
+      "chinaTime": "2026-07-30T02:00:00+08:00",
+      "beforeMinutes": 120,
+      "afterMinutes": 120
+    },
+    {
+      "date": "2026-07-30",
+      "timeET": "08:30",
+      "type": "GDP",
+      "source": "https://www.bea.gov/news/schedule/full",
+      "minute": 29756910,
+      "chinaTime": "2026-07-30T20:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-07-30",
+      "timeET": "08:30",
+      "type": "PCE",
+      "source": "https://www.bea.gov/news/schedule/full",
+      "minute": 29756910,
+      "chinaTime": "2026-07-30T20:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-08-07",
+      "timeET": "08:30",
+      "type": "NFP",
+      "source": "https://www.bls.gov/schedule/2026/",
+      "minute": 29768430,
+      "chinaTime": "2026-08-07T20:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-08-12",
+      "timeET": "08:30",
+      "type": "CPI",
+      "source": "https://www.bls.gov/schedule/2026/",
+      "minute": 29775630,
+      "chinaTime": "2026-08-12T20:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-08-19",
+      "timeET": "14:00",
+      "type": "FOMC_minutes",
+      "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "minute": 29786040,
+      "chinaTime": "2026-08-20T02:00:00+08:00",
+      "beforeMinutes": 120,
+      "afterMinutes": 120
+    },
+    {
+      "date": "2026-08-26",
+      "timeET": "08:30",
+      "type": "GDP",
+      "source": "https://www.bea.gov/news/schedule/full",
+      "minute": 29795790,
+      "chinaTime": "2026-08-26T20:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-08-26",
+      "timeET": "08:30",
+      "type": "PCE",
+      "source": "https://www.bea.gov/news/schedule/full",
+      "minute": 29795790,
+      "chinaTime": "2026-08-26T20:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-09-04",
+      "timeET": "08:30",
+      "type": "NFP",
+      "source": "https://www.bls.gov/schedule/2026/",
+      "minute": 29808750,
+      "chinaTime": "2026-09-04T20:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-09-11",
+      "timeET": "08:30",
+      "type": "CPI",
+      "source": "https://www.bls.gov/schedule/2026/",
+      "minute": 29818830,
+      "chinaTime": "2026-09-11T20:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-09-16",
+      "timeET": "14:00",
+      "type": "FOMC",
+      "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "minute": 29826360,
+      "chinaTime": "2026-09-17T02:00:00+08:00",
+      "beforeMinutes": 120,
+      "afterMinutes": 120
+    },
+    {
+      "date": "2026-09-30",
+      "timeET": "08:30",
+      "type": "GDP",
+      "source": "https://www.bea.gov/news/schedule/full",
+      "minute": 29846190,
+      "chinaTime": "2026-09-30T20:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-09-30",
+      "timeET": "08:30",
+      "type": "PCE",
+      "source": "https://www.bea.gov/news/schedule/full",
+      "minute": 29846190,
+      "chinaTime": "2026-09-30T20:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-10-02",
+      "timeET": "08:30",
+      "type": "NFP",
+      "source": "https://www.bls.gov/schedule/2026/",
+      "minute": 29849070,
+      "chinaTime": "2026-10-02T20:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-10-07",
+      "timeET": "14:00",
+      "type": "FOMC_minutes",
+      "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "minute": 29856600,
+      "chinaTime": "2026-10-08T02:00:00+08:00",
+      "beforeMinutes": 120,
+      "afterMinutes": 120
+    },
+    {
+      "date": "2026-10-14",
+      "timeET": "08:30",
+      "type": "CPI",
+      "source": "https://www.bls.gov/schedule/2026/",
+      "minute": 29866350,
+      "chinaTime": "2026-10-14T20:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-10-28",
+      "timeET": "14:00",
+      "type": "FOMC",
+      "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "minute": 29886840,
+      "chinaTime": "2026-10-29T02:00:00+08:00",
+      "beforeMinutes": 120,
+      "afterMinutes": 120
+    },
+    {
+      "date": "2026-10-29",
+      "timeET": "08:30",
+      "type": "GDP",
+      "source": "https://www.bea.gov/news/schedule/full",
+      "minute": 29887950,
+      "chinaTime": "2026-10-29T20:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-10-29",
+      "timeET": "08:30",
+      "type": "PCE",
+      "source": "https://www.bea.gov/news/schedule/full",
+      "minute": 29887950,
+      "chinaTime": "2026-10-29T20:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-11-06",
+      "timeET": "08:30",
+      "type": "NFP",
+      "source": "https://www.bls.gov/schedule/2026/",
+      "minute": 29899530,
+      "chinaTime": "2026-11-06T21:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-11-10",
+      "timeET": "08:30",
+      "type": "CPI",
+      "source": "https://www.bls.gov/schedule/2026/",
+      "minute": 29905290,
+      "chinaTime": "2026-11-10T21:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-11-18",
+      "timeET": "14:00",
+      "type": "FOMC_minutes",
+      "source": "https://www.federalreserve.gov/monetarypolicy.htm",
+      "minute": 29917140,
+      "chinaTime": "2026-11-19T03:00:00+08:00",
+      "beforeMinutes": 120,
+      "afterMinutes": 120
+    },
+    {
+      "date": "2026-11-25",
+      "timeET": "08:30",
+      "type": "GDP",
+      "source": "https://www.bea.gov/news/schedule/full",
+      "minute": 29926890,
+      "chinaTime": "2026-11-25T21:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-11-25",
+      "timeET": "08:30",
+      "type": "PCE",
+      "source": "https://www.bea.gov/news/schedule/full",
+      "minute": 29926890,
+      "chinaTime": "2026-11-25T21:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-12-04",
+      "timeET": "08:30",
+      "type": "NFP",
+      "source": "https://www.bls.gov/schedule/news_release/empsit.htm",
+      "minute": 29939850,
+      "chinaTime": "2026-12-04T21:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-12-09",
+      "timeET": "14:00",
+      "type": "FOMC",
+      "source": "https://www.federalreserve.gov/monetarypolicy.htm",
+      "minute": 29947380,
+      "chinaTime": "2026-12-10T03:00:00+08:00",
+      "beforeMinutes": 120,
+      "afterMinutes": 120
+    },
+    {
+      "date": "2026-12-10",
+      "timeET": "08:30",
+      "type": "CPI",
+      "source": "https://www.bls.gov/schedule/news_release/cpi.htm",
+      "minute": 29948490,
+      "chinaTime": "2026-12-10T21:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-12-23",
+      "timeET": "08:30",
+      "type": "GDP",
+      "source": "https://www.bea.gov/news/schedule/full",
+      "minute": 29967210,
+      "chinaTime": "2026-12-23T21:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    },
+    {
+      "date": "2026-12-23",
+      "timeET": "08:30",
+      "type": "PCE",
+      "source": "https://www.bea.gov/news/schedule/full",
+      "minute": 29967210,
+      "chinaTime": "2026-12-23T21:30:00+08:00",
+      "beforeMinutes": 60,
+      "afterMinutes": 60
+    }
+  ]
+}

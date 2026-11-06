@@ -1,0 +1,5 @@
+﻿id,trades,wins,winRate,totalPnl,profitFactor,maxDrawdown,stressPnl
+trading_minutes_intraday,3,2,0.6666666666666666,3420.0,2.7628865979381443,3760.0,780.0
+trading_minutes_conditional_trend,3,2,0.6666666666666666,3420.0,2.7628865979381443,3760.0,780.0
+session_clock_intraday,11,3,0.2727272727272727,-7360.0,0.48746518105849584,16660.0,-540.0
+session_clock_conditional_trend,10,1,0.1,-13680.0,0.17490952955367914,20600.0,-4480.0

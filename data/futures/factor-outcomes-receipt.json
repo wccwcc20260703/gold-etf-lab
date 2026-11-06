@@ -1,0 +1,13 @@
+{
+  "cacheKey": "b005453da6eb98a356fa67039184f26903220769c8a2d58857e6049f58693b15",
+  "file": "factor-outcomes-v2.1.npz",
+  "sha256": "7e436ccae21f44fe33b93e21b1db6ade6b350e6726e641c5249473d8ebafb8c8",
+  "shape": [
+    2,
+    48,
+    17380,
+    11
+  ],
+  "source": "Derived from frozen actual AU2612 minutes, explicit execution functions, profiles and event calendar; no new market data",
+  "reusedFor": "v2.2/ablation trading exit functions unchanged fromv2.1; AST and input hashes checked"
+}
