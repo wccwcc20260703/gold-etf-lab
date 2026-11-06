@@ -26,18 +26,25 @@ jobs:
       - name: Fetch four ETFs sequentially
         if: github.event_name != 'push'
         run: python3 scripts/fetch_data.py
+      - name: Append new complete AU2612 days without revising the frozen sample
+        if: github.event_name != 'push'
+        run: python3 scripts/fetch_futures_forward.py
       - name: Build reproducible research and frozen forward simulation
         run: npm run build
       - name: Verify causal execution and accounting
-        run: npm test
+        run: |
+          npm test
+          python3 scripts/test_futures_acquisition.py
       - name: Audit published cash ledgers with independent Decimal arithmetic
-        run: python3 scripts/account_audit.py
+        run: |
+          python3 scripts/account_audit.py
+          python3 scripts/audit_futures.py
       - name: Preserve new verified research data
         if: github.event_name != 'push'
         run: |
           git config user.name 'gold-etf-research[bot]'
           git config user.email 'gold-etf-research[bot]@users.noreply.github.com'
-          git add data/archive data/daily data/acquisition.json data/quality.json data/freeze.json docs/data.json docs/all-trials.csv docs/account-audit.json
+          git add data/archive data/daily data/acquisition.json data/quality.json data/freeze.json docs/data.json docs/all-trials.csv docs/account-audit.json data/futures/forward-input.json docs/futures
           if ! git diff --cached --quiet; then
             git commit -m 'Update verified gold ETF research snapshot'
             git push

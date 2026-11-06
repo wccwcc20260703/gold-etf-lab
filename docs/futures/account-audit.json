@@ -1,0 +1,594 @@
+{
+  "status": "passed",
+  "candidatesIncludingStress": 72,
+  "roundTripsAudited": 5494,
+  "auditInputSha256": "c1c17097ca296e22c97846805f5ca739ecfc73fdbfa4f0ae156f5cbf27d80b43",
+  "checks": [
+    "signed one-lot position",
+    "no fills on zero volume",
+    "planned risk inclusive of costs",
+    "signal availability ordering",
+    "fee by trading day",
+    "daily variation margin and basis resets",
+    "Decimal balance and NAV",
+    "round-trip PnL"
+  ],
+  "receipts": [
+    {
+      "id": "pullback_0.8_any_off",
+      "cost": "base",
+      "trades": 194,
+      "events": 388,
+      "finalEquity": 292140.0,
+      "passed": true
+    },
+    {
+      "id": "pullback_0.8_any_off",
+      "cost": "stress",
+      "trades": 138,
+      "events": 276,
+      "finalEquity": 276080.0,
+      "passed": true
+    },
+    {
+      "id": "pullback_0.8_any_lagged",
+      "cost": "base",
+      "trades": 194,
+      "events": 390,
+      "finalEquity": 290280.0,
+      "passed": true
+    },
+    {
+      "id": "pullback_0.8_any_lagged",
+      "cost": "stress",
+      "trades": 116,
+      "events": 233,
+      "finalEquity": 275040.0,
+      "passed": true
+    },
+    {
+      "id": "pullback_0.8_day_off",
+      "cost": "base",
+      "trades": 128,
+      "events": 256,
+      "finalEquity": 284080.0,
+      "passed": true
+    },
+    {
+      "id": "pullback_0.8_day_off",
+      "cost": "stress",
+      "trades": 93,
+      "events": 186,
+      "finalEquity": 276360.0,
+      "passed": true
+    },
+    {
+      "id": "pullback_0.8_day_lagged",
+      "cost": "base",
+      "trades": 127,
+      "events": 256,
+      "finalEquity": 275520.0,
+      "passed": true
+    },
+    {
+      "id": "pullback_0.8_day_lagged",
+      "cost": "stress",
+      "trades": 73,
+      "events": 147,
+      "finalEquity": 269380.0,
+      "passed": true
+    },
+    {
+      "id": "pullback_0.8_night_off",
+      "cost": "base",
+      "trades": 110,
+      "events": 220,
+      "finalEquity": 294760.0,
+      "passed": true
+    },
+    {
+      "id": "pullback_0.8_night_off",
+      "cost": "stress",
+      "trades": 104,
+      "events": 208,
+      "finalEquity": 294220.0,
+      "passed": true
+    },
+    {
+      "id": "pullback_0.8_night_lagged",
+      "cost": "base",
+      "trades": 110,
+      "events": 220,
+      "finalEquity": 294760.0,
+      "passed": true
+    },
+    {
+      "id": "pullback_0.8_night_lagged",
+      "cost": "stress",
+      "trades": 104,
+      "events": 208,
+      "finalEquity": 294220.0,
+      "passed": true
+    },
+    {
+      "id": "pullback_1.5_any_off",
+      "cost": "base",
+      "trades": 192,
+      "events": 384,
+      "finalEquity": 313760.0,
+      "passed": true
+    },
+    {
+      "id": "pullback_1.5_any_off",
+      "cost": "stress",
+      "trades": 150,
+      "events": 300,
+      "finalEquity": 308660.0,
+      "passed": true
+    },
+    {
+      "id": "pullback_1.5_any_lagged",
+      "cost": "base",
+      "trades": 191,
+      "events": 384,
+      "finalEquity": 310080.0,
+      "passed": true
+    },
+    {
+      "id": "pullback_1.5_any_lagged",
+      "cost": "stress",
+      "trades": 124,
+      "events": 249,
+      "finalEquity": 301180.0,
+      "passed": true
+    },
+    {
+      "id": "pullback_1.5_day_off",
+      "cost": "base",
+      "trades": 127,
+      "events": 254,
+      "finalEquity": 301680.0,
+      "passed": true
+    },
+    {
+      "id": "pullback_1.5_day_off",
+      "cost": "stress",
+      "trades": 81,
+      "events": 162,
+      "finalEquity": 271440.0,
+      "passed": true
+    },
+    {
+      "id": "pullback_1.5_day_lagged",
+      "cost": "base",
+      "trades": 127,
+      "events": 259,
+      "finalEquity": 297520.0,
+      "passed": true
+    },
+    {
+      "id": "pullback_1.5_day_lagged",
+      "cost": "stress",
+      "trades": 75,
+      "events": 151,
+      "finalEquity": 269060.0,
+      "passed": true
+    },
+    {
+      "id": "pullback_1.5_night_off",
+      "cost": "base",
+      "trades": 106,
+      "events": 212,
+      "finalEquity": 311840.0,
+      "passed": true
+    },
+    {
+      "id": "pullback_1.5_night_off",
+      "cost": "stress",
+      "trades": 98,
+      "events": 196,
+      "finalEquity": 314800.0,
+      "passed": true
+    },
+    {
+      "id": "pullback_1.5_night_lagged",
+      "cost": "base",
+      "trades": 106,
+      "events": 212,
+      "finalEquity": 311840.0,
+      "passed": true
+    },
+    {
+      "id": "pullback_1.5_night_lagged",
+      "cost": "stress",
+      "trades": 98,
+      "events": 196,
+      "finalEquity": 314800.0,
+      "passed": true
+    },
+    {
+      "id": "breakout_0.8_any_off",
+      "cost": "base",
+      "trades": 141,
+      "events": 282,
+      "finalEquity": 304060.0,
+      "passed": true
+    },
+    {
+      "id": "breakout_0.8_any_off",
+      "cost": "stress",
+      "trades": 116,
+      "events": 232,
+      "finalEquity": 298360.0,
+      "passed": true
+    },
+    {
+      "id": "breakout_0.8_any_lagged",
+      "cost": "base",
+      "trades": 142,
+      "events": 285,
+      "finalEquity": 308760.0,
+      "passed": true
+    },
+    {
+      "id": "breakout_0.8_any_lagged",
+      "cost": "stress",
+      "trades": 117,
+      "events": 235,
+      "finalEquity": 299340.0,
+      "passed": true
+    },
+    {
+      "id": "breakout_0.8_day_off",
+      "cost": "base",
+      "trades": 87,
+      "events": 174,
+      "finalEquity": 279940.0,
+      "passed": true
+    },
+    {
+      "id": "breakout_0.8_day_off",
+      "cost": "stress",
+      "trades": 72,
+      "events": 144,
+      "finalEquity": 284700.0,
+      "passed": true
+    },
+    {
+      "id": "breakout_0.8_day_lagged",
+      "cost": "base",
+      "trades": 88,
+      "events": 178,
+      "finalEquity": 284480.0,
+      "passed": true
+    },
+    {
+      "id": "breakout_0.8_day_lagged",
+      "cost": "stress",
+      "trades": 72,
+      "events": 146,
+      "finalEquity": 284180.0,
+      "passed": true
+    },
+    {
+      "id": "breakout_0.8_night_off",
+      "cost": "base",
+      "trades": 68,
+      "events": 136,
+      "finalEquity": 314120.0,
+      "passed": true
+    },
+    {
+      "id": "breakout_0.8_night_off",
+      "cost": "stress",
+      "trades": 55,
+      "events": 110,
+      "finalEquity": 308320.0,
+      "passed": true
+    },
+    {
+      "id": "breakout_0.8_night_lagged",
+      "cost": "base",
+      "trades": 70,
+      "events": 140,
+      "finalEquity": 312440.0,
+      "passed": true
+    },
+    {
+      "id": "breakout_0.8_night_lagged",
+      "cost": "stress",
+      "trades": 56,
+      "events": 112,
+      "finalEquity": 309340.0,
+      "passed": true
+    },
+    {
+      "id": "breakout_1.5_any_off",
+      "cost": "base",
+      "trades": 132,
+      "events": 264,
+      "finalEquity": 310880.0,
+      "passed": true
+    },
+    {
+      "id": "breakout_1.5_any_off",
+      "cost": "stress",
+      "trades": 110,
+      "events": 220,
+      "finalEquity": 289580.0,
+      "passed": true
+    },
+    {
+      "id": "breakout_1.5_any_lagged",
+      "cost": "base",
+      "trades": 133,
+      "events": 268,
+      "finalEquity": 314840.0,
+      "passed": true
+    },
+    {
+      "id": "breakout_1.5_any_lagged",
+      "cost": "stress",
+      "trades": 111,
+      "events": 224,
+      "finalEquity": 288440.0,
+      "passed": true
+    },
+    {
+      "id": "breakout_1.5_day_off",
+      "cost": "base",
+      "trades": 79,
+      "events": 158,
+      "finalEquity": 278080.0,
+      "passed": true
+    },
+    {
+      "id": "breakout_1.5_day_off",
+      "cost": "stress",
+      "trades": 66,
+      "events": 132,
+      "finalEquity": 286440.0,
+      "passed": true
+    },
+    {
+      "id": "breakout_1.5_day_lagged",
+      "cost": "base",
+      "trades": 79,
+      "events": 161,
+      "finalEquity": 279680.0,
+      "passed": true
+    },
+    {
+      "id": "breakout_1.5_day_lagged",
+      "cost": "stress",
+      "trades": 66,
+      "events": 135,
+      "finalEquity": 283460.0,
+      "passed": true
+    },
+    {
+      "id": "breakout_1.5_night_off",
+      "cost": "base",
+      "trades": 62,
+      "events": 124,
+      "finalEquity": 318020.0,
+      "passed": true
+    },
+    {
+      "id": "breakout_1.5_night_off",
+      "cost": "stress",
+      "trades": 50,
+      "events": 100,
+      "finalEquity": 295840.0,
+      "passed": true
+    },
+    {
+      "id": "breakout_1.5_night_lagged",
+      "cost": "base",
+      "trades": 64,
+      "events": 128,
+      "finalEquity": 317260.0,
+      "passed": true
+    },
+    {
+      "id": "breakout_1.5_night_lagged",
+      "cost": "stress",
+      "trades": 51,
+      "events": 102,
+      "finalEquity": 297840.0,
+      "passed": true
+    },
+    {
+      "id": "reversion_0.8_any_off",
+      "cost": "base",
+      "trades": 13,
+      "events": 26,
+      "finalEquity": 295400.0,
+      "passed": true
+    },
+    {
+      "id": "reversion_0.8_any_off",
+      "cost": "stress",
+      "trades": 12,
+      "events": 24,
+      "finalEquity": 293180.0,
+      "passed": true
+    },
+    {
+      "id": "reversion_0.8_any_lagged",
+      "cost": "base",
+      "trades": 44,
+      "events": 88,
+      "finalEquity": 284400.0,
+      "passed": true
+    },
+    {
+      "id": "reversion_0.8_any_lagged",
+      "cost": "stress",
+      "trades": 38,
+      "events": 76,
+      "finalEquity": 285440.0,
+      "passed": true
+    },
+    {
+      "id": "reversion_0.8_day_off",
+      "cost": "base",
+      "trades": 6,
+      "events": 12,
+      "finalEquity": 295280.0,
+      "passed": true
+    },
+    {
+      "id": "reversion_0.8_day_off",
+      "cost": "stress",
+      "trades": 5,
+      "events": 10,
+      "finalEquity": 293700.0,
+      "passed": true
+    },
+    {
+      "id": "reversion_0.8_day_lagged",
+      "cost": "base",
+      "trades": 25,
+      "events": 50,
+      "finalEquity": 286500.0,
+      "passed": true
+    },
+    {
+      "id": "reversion_0.8_day_lagged",
+      "cost": "stress",
+      "trades": 21,
+      "events": 42,
+      "finalEquity": 285480.0,
+      "passed": true
+    },
+    {
+      "id": "reversion_0.8_night_off",
+      "cost": "base",
+      "trades": 7,
+      "events": 14,
+      "finalEquity": 300120.0,
+      "passed": true
+    },
+    {
+      "id": "reversion_0.8_night_off",
+      "cost": "stress",
+      "trades": 7,
+      "events": 14,
+      "finalEquity": 299480.0,
+      "passed": true
+    },
+    {
+      "id": "reversion_0.8_night_lagged",
+      "cost": "base",
+      "trades": 22,
+      "events": 44,
+      "finalEquity": 295240.0,
+      "passed": true
+    },
+    {
+      "id": "reversion_0.8_night_lagged",
+      "cost": "stress",
+      "trades": 19,
+      "events": 38,
+      "finalEquity": 299080.0,
+      "passed": true
+    },
+    {
+      "id": "reversion_1.5_any_off",
+      "cost": "base",
+      "trades": 13,
+      "events": 26,
+      "finalEquity": 301000.0,
+      "passed": true
+    },
+    {
+      "id": "reversion_1.5_any_off",
+      "cost": "stress",
+      "trades": 12,
+      "events": 24,
+      "finalEquity": 297940.0,
+      "passed": true
+    },
+    {
+      "id": "reversion_1.5_any_lagged",
+      "cost": "base",
+      "trades": 44,
+      "events": 88,
+      "finalEquity": 293580.0,
+      "passed": true
+    },
+    {
+      "id": "reversion_1.5_any_lagged",
+      "cost": "stress",
+      "trades": 40,
+      "events": 80,
+      "finalEquity": 289300.0,
+      "passed": true
+    },
+    {
+      "id": "reversion_1.5_day_off",
+      "cost": "base",
+      "trades": 6,
+      "events": 12,
+      "finalEquity": 297500.0,
+      "passed": true
+    },
+    {
+      "id": "reversion_1.5_day_off",
+      "cost": "stress",
+      "trades": 5,
+      "events": 10,
+      "finalEquity": 294980.0,
+      "passed": true
+    },
+    {
+      "id": "reversion_1.5_day_lagged",
+      "cost": "base",
+      "trades": 25,
+      "events": 50,
+      "finalEquity": 285820.0,
+      "passed": true
+    },
+    {
+      "id": "reversion_1.5_day_lagged",
+      "cost": "stress",
+      "trades": 21,
+      "events": 42,
+      "finalEquity": 281980.0,
+      "passed": true
+    },
+    {
+      "id": "reversion_1.5_night_off",
+      "cost": "base",
+      "trades": 7,
+      "events": 14,
+      "finalEquity": 303500.0,
+      "passed": true
+    },
+    {
+      "id": "reversion_1.5_night_off",
+      "cost": "stress",
+      "trades": 7,
+      "events": 14,
+      "finalEquity": 302960.0,
+      "passed": true
+    },
+    {
+      "id": "reversion_1.5_night_lagged",
+      "cost": "base",
+      "trades": 22,
+      "events": 44,
+      "finalEquity": 301560.0,
+      "passed": true
+    },
+    {
+      "id": "reversion_1.5_night_lagged",
+      "cost": "stress",
+      "trades": 20,
+      "events": 40,
+      "finalEquity": 304640.0,
+      "passed": true
+    }
+  ]
+}

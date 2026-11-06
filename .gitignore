@@ -2,4 +2,6 @@ node_modules/
 data/raw/
 __pycache__/
 *.pyc
+data/futures/full-history/
+data/futures/access-probe/
 .DS_Store

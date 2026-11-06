@@ -1,1 +1,1 @@
-{"name":"gold-etf-lab","version":"0.1.0","private":true,"type":"module","scripts":{"test":"node --test tests/*.test.mjs","build":"node scripts/build.mjs","serve":"python3 -m http.server 8786 --directory docs"}}
+{"name":"gold-etf-lab","version":"0.2.0","private":true,"type":"module","scripts":{"test":"node --test tests/*.test.mjs","build":"node scripts/build.mjs && node scripts/build_futures.mjs","build:futures":"node scripts/build_futures.mjs","serve":"python3 -m http.server 8786 --directory docs"}}

@@ -1,0 +1,91 @@
+{
+  "asof": "2026-11-06",
+  "target": "2025 first trading day through 2026-11-06; real AU2512 then AU2612 contract roll, one lot; no price-splice profit",
+  "status": "AU2612_ready_with_volume_caveat",
+  "available": [
+    {
+      "contract": "AU2512",
+      "source": "Shinny EDB anonymous last-year minute endpoint",
+      "rows": 14985,
+      "first_bar_start": "2025-11-06 21:00:00",
+      "last_bar_start": "2025-12-15 14:59:00",
+      "trading_days": 27,
+      "first_trading_day": "2025-11-07",
+      "last_trading_day": "2025-12-15",
+      "duplicate_timestamps": 0,
+      "invalid_ohlc": 0,
+      "off_tick_prices": 0,
+      "unmapped_calendar_rows": 0,
+      "zero_volume_minutes": 4585,
+      "trade_day_minute_counts": {
+        "555": 27
+      },
+      "reference": "Same-contract Sina daily OHLCV, separate source from downloaded EDB minute bars",
+      "daily_differences_over_one_tick": {
+        "open": 0,
+        "high": 0,
+        "low": 0,
+        "close": 0
+      },
+      "daily_volume_mismatch_days": 11,
+      "maximum_daily_price_difference": {
+        "open": 0.0,
+        "high": 0.0,
+        "low": 0.0,
+        "close": 0.0
+      },
+      "sha256": "9aca2827edd9d534fce1dc0ffe5a6b0f64fd7765155ba2a29dbab8080d2ecf24"
+    },
+    {
+      "contract": "AU2612",
+      "source": "Shinny EDB anonymous last-year minute endpoint",
+      "rows": 128115,
+      "first_bar_start": "2025-11-17 21:00:00",
+      "last_bar_start": "2026-11-06 14:59:00",
+      "trading_days": 235,
+      "first_trading_day": "2025-11-18",
+      "last_trading_day": "2026-11-06",
+      "duplicate_timestamps": 0,
+      "invalid_ohlc": 0,
+      "off_tick_prices": 0,
+      "unmapped_calendar_rows": 0,
+      "zero_volume_minutes": 22423,
+      "trade_day_minute_counts": {
+        "555": 228,
+        "225": 7
+      },
+      "reference": "Same-contract Sina daily OHLCV, separate source from downloaded EDB minute bars",
+      "daily_differences_over_one_tick": {
+        "open": 0,
+        "high": 0,
+        "low": 0,
+        "close": 0
+      },
+      "daily_volume_mismatch_days": 16,
+      "maximum_daily_price_difference": {
+        "open": 0.0,
+        "high": 0.0,
+        "low": 0.0,
+        "close": 0.0
+      },
+      "sha256": "d1b4172697f79c8ca6785f5c5808bbb2c1d80232b0fd158ccd90082a2781019f"
+    }
+  ],
+  "missing": {
+    "contract": "AU2512",
+    "start_trading_day": "2025-01-02",
+    "end_trading_day": "2025-11-06",
+    "reason": "Official anonymous EDB service returned HTTP403 for earlier-than-one-year minute history"
+  },
+  "backtestPublished": false,
+  "scorePolicy": "60-100 signal strength is not win probability; empirical win calibration requires complete chronological data",
+  "preservedRisk": {
+    "capital": 300000,
+    "lots": 1,
+    "plannedMaxLossCny": 3000,
+    "allowNoTrade": true,
+    "conditionalOvernight": true
+  },
+  "source": "https://doc.shinnytech.com/edb/latest/md_server.html",
+  "currentPhase": "Full AU2612 since listing; AU2512 early 2025 deferred by user"
+}

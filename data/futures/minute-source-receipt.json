@@ -1,0 +1,26 @@
+{
+  "contract": "AU2612",
+  "requestedStart": "2025-11-17 20:00:00",
+  "requestedEnd": "2026-11-06 15:01:00",
+  "source": "https://edb.shinnytech.com/md/kline",
+  "sourceDocumentation": "https://doc.shinnytech.com/edb/latest/md_server.html",
+  "timestampConvention": "bar start; Unix nanoseconds, Asia/Shanghai display",
+  "requestedAt": "2026-11-06T10:02:47.057340+00:00",
+  "httpStatus": 200,
+  "status": "downloaded",
+  "rows": 128115,
+  "first": "2025-11-17T21:00:00+08:00",
+  "last": "2026-11-06T14:59:00+08:00",
+  "bytes": 8190933,
+  "sha256": "d1b4172697f79c8ca6785f5c5808bbb2c1d80232b0fd158ccd90082a2781019f",
+  "columns": [
+    "datetime_nano",
+    "open",
+    "high",
+    "low",
+    "close",
+    "volume",
+    "open_oi",
+    "close_oi"
+  ]
+}
