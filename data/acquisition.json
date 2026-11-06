@@ -1,0 +1,53 @@
+{
+  "asof": "2026-11-06",
+  "fetchedAt": "2026-11-06T08:17:30.192868+00:00",
+  "source": "Eastmoney public kline API",
+  "volumeInputUnit": "hands; converted to ETF shares by ×100",
+  "funds": [
+    {
+      "code": "518880",
+      "exchange": "sh",
+      "name": "华安黄金ETF",
+      "minuteRows": 1536,
+      "minuteStart": "2026-09-16 09:35",
+      "minuteEnd": "2026-11-06 15:00",
+      "dailyRows": 1658,
+      "dailyStart": "2020-01-02",
+      "dailyEnd": "2026-11-06"
+    },
+    {
+      "code": "518800",
+      "exchange": "sh",
+      "name": "国泰黄金ETF",
+      "minuteRows": 1536,
+      "minuteStart": "2026-09-16 09:35",
+      "minuteEnd": "2026-11-06 15:00",
+      "dailyRows": 1658,
+      "dailyStart": "2020-01-02",
+      "dailyEnd": "2026-11-06"
+    },
+    {
+      "code": "159934",
+      "exchange": "sz",
+      "name": "易方达黄金ETF",
+      "minuteRows": 1536,
+      "minuteStart": "2026-09-16 09:35",
+      "minuteEnd": "2026-11-06 15:00",
+      "dailyRows": 1658,
+      "dailyStart": "2020-01-02",
+      "dailyEnd": "2026-11-06"
+    },
+    {
+      "code": "159937",
+      "exchange": "sz",
+      "name": "博时黄金ETF",
+      "minuteRows": 1536,
+      "minuteStart": "2026-09-16 09:35",
+      "minuteEnd": "2026-11-06 15:00",
+      "dailyRows": 1658,
+      "dailyStart": "2020-01-02",
+      "dailyEnd": "2026-11-06"
+    }
+  ],
+  "errors": []
+}

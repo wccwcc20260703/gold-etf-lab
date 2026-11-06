@@ -1,0 +1,14 @@
+{
+  "engine": "Independent Python Decimal accounting",
+  "funds": 4,
+  "auditedFills": 324,
+  "maximumCashDifferenceCny": "1E-10",
+  "checks": [
+    "price tick and adverse slippage",
+    "minimum and proportional commission",
+    "cash conservation",
+    "nonnegative shares",
+    "closing position zero"
+  ],
+  "passed": true
+}

@@ -1,0 +1,51 @@
+name: Gold ETF research and Pages
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: '37 7 * * 1-5'
+concurrency:
+  group: gold-etf-research
+  cancel-in-progress: false
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Fetch four ETFs sequentially
+        if: github.event_name != 'push'
+        run: python3 scripts/fetch_data.py
+      - name: Build reproducible research and frozen forward simulation
+        run: npm run build
+      - name: Verify causal execution and accounting
+        run: npm test
+      - name: Audit published cash ledgers with independent Decimal arithmetic
+        run: python3 scripts/account_audit.py
+      - name: Preserve new verified research data
+        if: github.event_name != 'push'
+        run: |
+          git config user.name 'gold-etf-research[bot]'
+          git config user.email 'gold-etf-research[bot]@users.noreply.github.com'
+          git add data/archive data/daily data/acquisition.json data/quality.json data/freeze.json docs/data.json docs/all-trials.csv docs/account-audit.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update verified gold ETF research snapshot'
+            git push
+          fi
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - name: Deploy research dashboard
+        id: deployment
+        uses: actions/deploy-pages@v4
