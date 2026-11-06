@@ -42,7 +42,7 @@ $('start').value=data.coverage.start;$('end').value=data.coverage.end;$('days').
 $('forward-count').textContent=`${data.forward.find(f=>f.code==='518880').days} 个交易日`;
 $('coverage-warning').textContent=`真实分钟目前仅覆盖${data.coverage.dates}个交易日，首版属于方法筛选。日线覆盖更长，但没有用日线补造分钟成交；暂无足够证据支持“高胜率模型”。`;
 $('build-time').textContent=`行情截至 ${data.coverage.end}`;
-$('split-note').textContent=`按时间顺序划分：训练段 ${data.coverage.start}至${data.coverage.trainEnd}；选择段截至${data.coverage.validationEnd}；其后为后段观察。候选参数与规则在初次取得这批数据前确定，仍属于本轮历史探索。`;
+$('split-note').textContent=`按时间顺序划分：训练段 ${data.coverage.start}至${data.coverage.trainEnd}；选择段截至${data.coverage.validationEnd}；其后为后段观察。候选参数与规则在查看首轮回测结果前确定，仍属于本轮历史探索。`;
 $('freeze-title').textContent=`冻结候选：${MODELS.find(m=>m.id===data.freeze.model).name}`;
 $('freeze-note').textContent=`冻结截止 ${data.freeze.frozenAfter}。训练与选择段没有候选满足最小样本和盈利筛选，本版预先指定的顺势回踩基线仅用于后续影子记录，默认状态为空仓。`;
 $('freeze-hash').textContent=`规则哈希 ${data.freeze.hash}`;
