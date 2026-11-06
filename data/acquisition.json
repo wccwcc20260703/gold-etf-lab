@@ -1,6 +1,6 @@
 {
   "asof": "2026-11-06",
-  "fetchedAt": "2026-11-06T08:17:30.192868+00:00",
+  "fetchedAt": "2026-11-06T09:01:49.359635+00:00",
   "source": "Eastmoney public kline API",
   "volumeInputUnit": "hands; converted to ETF shares by ×100",
   "funds": [
